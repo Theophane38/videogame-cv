@@ -1,0 +1,236 @@
+{
+    "1": {
+        "name": "rock",
+        "width": 2,
+        "height": 2,
+        "position": {
+            "x": -400,
+            "y": -600
+        }
+    },
+    "2": {
+        "name": "stump",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -400,
+            "y": -180
+        }
+    },
+    "3": {
+        "name": "building",
+        "width": 4,
+        "height": 5,
+        "position": {
+            "x": -120,
+            "y": -1180
+        }
+    },
+    "4": {
+        "name": "building",
+        "width": 5,
+        "height": 6,
+        "position": {
+            "x": -320,
+            "y": -1180
+        }
+    },
+    "5": {
+        "name": "woodstock",
+        "width": 3,
+        "height": 2,
+        "position": {
+            "x": -560,
+            "y": -180
+        }
+    },
+    "6": {
+        "name": "lamp",
+        "width": 1,
+        "height": 3,
+        "position": {
+            "x": -1440,
+            "y": -340
+        }
+    },
+    "7": {
+        "name": "banch",
+        "width": 3,
+        "height": 2,
+        "position": {
+            "x": -1240,
+            "y": -720
+        }
+    },
+    "8.1": {
+        "name": "fence",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -1000,
+            "y": -540
+        }
+    },
+    "8.2": {
+        "name": "side-fence",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -1020,
+            "y": -540
+        }
+    },
+    "8.3": {
+        "name": "side-fence",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -1020,
+            "y": -560
+        }
+    },
+    "8.4": {
+        "name": "side-fence",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -1020,
+            "y": -580
+        }
+    },
+    "8.5": {
+        "name": "side-fence",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -980,
+            "y": -580
+        }
+    },
+    "8.6": {
+        "name": "side-fence",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -980,
+            "y": -560
+        }
+    },
+    "8.7": {
+        "name": "side-fence",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -980,
+            "y": -540
+        }
+    },
+    "9": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.1": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.2": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.3": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.4": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.5": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.6": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.7": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.8": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "9.9": {
+        "name": "ever green",
+        "width": 3,
+        "height": 3,
+        "position": {
+            "x": -240,
+            "y": 0
+        }
+    },
+    "10": {
+        "name": "mailBox",
+        "width": 1,
+        "height": 2,
+        "position": {
+            "x": -1660,
+            "y": -120
+        }
+    },
+    "11": {
+        "name": "trashBin",
+        "width": 1,
+        "height": 1,
+        "position": {
+            "x": -1780,
+            "y": -1480
+        }
+    }
+}

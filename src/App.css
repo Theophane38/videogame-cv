@@ -1,0 +1,823 @@
+@font-face {
+  font-family: pixel-font;
+  src: url('fonts/pixel-font.ttf');
+}
+.nothing {
+  background-image: url('images/character/pokemons.png');
+}
+body {
+  background-color: #222;
+}
+.header {
+  background-color: #444;
+}
+.header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+}
+.header ul {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+.header ul li {
+  display: inline-block;
+  list-style: none;
+  color: #fff;
+  padding: 13px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.field {
+  width: 960px;
+  height: 460px;
+  margin: auto;
+}
+
+.row {
+  line-height: 0;
+}
+.case {
+  background-image: url('images/texture.png');
+  background-position: -40px -0;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.case div {
+  background-size: calc(20 * 94px);
+}
+.elements {
+  width: 960px;
+  height: 460px;
+  margin: auto;
+  margin-top: -460px;
+  position: relative;
+}
+.elements div {
+  background-size: calc(20 * 94px);
+}
+.case img {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+.hero {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: top 0.1s, left 0.1s
+}
+.hero {
+
+}
+.hero .topHero {
+  background-image: url('images/character/sprite.png');
+  background-size: 300%;
+  width: 20px;
+  height: 10px;
+}
+.hero.lokhlass .topHero {
+  background-image: url('images/character/pokemons.png');
+  background-size: 300%;
+  width: 20px;
+  height: 10px;
+}
+.hero .bottomHero {
+  background-image: url('images/character/sprite.png');
+  background-size: 300%;
+  width: 20px;
+  height: 10px;
+}
+.hero.lokhlass .bottomHero {
+  background-image: url('images/character/pokemons.png');
+  background-size: 300%;
+  width: 20px;
+  height: 10px;
+}
+.hero .bottomHero.active{
+  display: none;
+}
+.element {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: 300%;
+  z-index: 2;
+}
+
+.test {
+  
+}
+.testImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(94px * 20)
+}
+.testHover {
+
+}
+.testContainer {
+  position: absolute;
+  width: 2000px;
+  line-height: 0;
+}
+.testCase {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgba(0,0,0,00);
+  line-height: 0;
+}
+.testCase:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+.screen {
+  width: 960px;
+  height: 460px;
+  position: relative;
+  margin: auto;
+}
+.fightScreen .pokeballThrowing {
+  width: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  animation-name: throwing;
+  animation-duration: 1.2s;
+  margin-bottom: 158px;
+  margin-left: 500px;
+  display: none;
+}
+.fightScreen .pokeballThrowing.active {
+  display: block;
+}
+@keyframes throwing {
+  0% {
+    margin-bottom: 60px;
+    margin-left: 100px;
+    transform: rotate(0deg);
+  }
+
+  17% {
+    margin-bottom: 200px;
+    margin-left: 160px;
+  }
+  35% {
+    margin-bottom: 240px;
+    margin-left: 225px;
+  }
+  52% {
+    margin-bottom: 200px;
+    margin-left: 290px;
+  }
+  70% {
+    margin-bottom: 140px;
+    margin-left: 350px;
+
+  }
+  100% {
+    margin-bottom: 250px;
+    margin-left: 500px;
+    transform: rotate(14400deg);
+  }
+}
+.fightScreen .topScreen {
+  overflow: hidden;
+  margin: auto;
+  width: 500px;
+  height: 230px;
+  background-image: url('./images/backgound-fight.png');
+  border: 1px solid #ccc;
+  position: relative;
+  background-size: 100%;
+
+}
+.fightScreen .topScreen .infos {
+    top: 31px;
+    width: 186px;
+    color: #fff;
+    border: 2px solid #000;
+    border-left: none;
+    background-color: #444;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    opacity: 1;
+    animation-name: infos;
+    animation-duration: 3s;
+}
+@keyframes infos {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fightScreen .topScreen .infos .name {
+  margin: 0;
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.fightScreen .topScreen .infos .level {
+  margin: 0;
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 102px;
+}
+.fightScreen .topScreen .infos .healthBar {
+  height: 9px;
+}
+.fightScreen .topScreen .infos .healthBar span {
+  font-size: 4px;
+  position: absolute;
+  right: 106px;
+}
+.fightScreen .topScreen .infos .healthBar progress {
+  width: 100px;
+  height: 5px;
+  color: green;
+  background-color: green;
+  position: absolute;
+  right: 5px;
+  border-radius: 5px;
+}
+.fightScreen .topScreen .visual {
+  position: absolute;
+  right: 0;
+}
+.fightScreen .topScreen .visual .theophane {
+  width: 50px;
+  transform: scale(-1,1);
+  position: absolute;
+  right: 110px;
+  top: 20px;
+  z-index: 1;
+  animation-name: theophane;
+  animation-duration: 3s;
+}
+@keyframes theophane {
+  0% {
+    right: 610px;
+  }
+  100% {
+    right: 110px;
+  }
+}
+.fightScreen .topScreen .visual .platform {
+  top: 50px;
+  position: absolute;
+  right: 0;
+  animation-name: enemyPlatform;
+  animation-duration: 3s;
+}
+@keyframes enemyPlatform {
+  0% {
+    right: 500px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.fightScreen .topScreen .dialogBox {
+  bottom: 0;
+  position: absolute;
+  width: 472px;
+  height: 50px;
+  border-radius: 11px;
+  background-color: #fff;
+  height: 35px;
+  padding: 9px;
+  border: 5px double#000;
+  background-color: white;
+  z-index: 2;
+  font-family: pixel-font;
+  font-size: 12px;
+}
+.fightScreen .topScreen .allyVisual .employeur {
+  width: 128px;
+  position: absolute;
+  bottom: 0px;
+  left: 56px;
+  z-index: 1;
+}
+.fightScreen .topScreen .allyVisual .platform {
+  bottom: 0;
+  position: absolute;
+}
+.fightScreen .bottomScreen {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  background: rgba(32,61,227,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(32,61,227,1) 0%, rgba(10,38,69,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(32,61,227,1)), color-stop(100%, rgba(10,38,69,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(32,61,227,1) 0%, rgba(10,38,69,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(32,61,227,1) 0%, rgba(10,38,69,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(32,61,227,1) 0%, rgba(10,38,69,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(32,61,227,1) 0%, rgba(10,38,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#203de3', endColorstr='#0a2645', GradientType=1 );
+  background-size: cover;
+  width: 500px;
+  height: 230px;
+  border: 1px solid grey;
+}
+.bottomScreen .action {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -webkit-border-radius: .5em; 
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  width: 30%;
+  margin-left: 2.5%;
+  vertical-align: top;
+}
+.bottomScreen .action.moves {
+  color: #faddde;
+  border: solid 1px #980c10;
+  background: #d81b21;
+  background: -moz-linear-gradient(top, #ed1c24, #aa1317);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+  padding: 40px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.bottomScreen .action.moves:hover {
+  background: #b61318;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+}
+.bottomScreen .action.pack {
+  color: #fef4e9;
+  border: solid 1px #da7c0c;
+  background: #f78d1d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+  background: -moz-linear-gradient(top, #faa51a, #f47a20);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+  padding: 30px 0;
+  margin-top: 30px;
+}
+.bottomScreen .action.pack:hover {
+  background: #f47c20;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+  background: -moz-linear-gradient(top, #f88e11, #f06015);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.bottomScreen .action.pokemons {
+  color: #e8f0de;
+  border: solid 1px #538312;
+  background: #64991e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+  background: -moz-linear-gradient(top, #7db72f, #4e7d0e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+  padding: 30px 0;
+  margin-top: 30px;
+}
+.bottomScreen .action.pokemons:hover {
+  background: #538018;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
+  background: -moz-linear-gradient(top, #6b9d28, #436b0c);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
+}
+.bottomScreen .action.run {
+  color: #d9eef7;
+  border: solid 1px #0076a3;
+  background: #0095cd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+  background: -moz-linear-gradient(top, #00adee, #0078a5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+  padding: 30px 0;
+  margin-top: 60px;
+}
+.bottomScreen .action.run:hover {
+  background: #007ead;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+  background: -moz-linear-gradient(top, #0095cc, #00678e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+.fightScreen .move {
+  width: calc(45% - 4px);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 0;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  text-align: center;
+  border: 2px solid grey;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  background-color: rgba(255,255,255,0.7);
+  color: #444;
+  cursor: pointer;
+  margin: 0 2.5%;
+}
+.fightScreen .move:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+.fightScreen .move:nth-child(1), .actionScreen .move:nth-child(2) {
+  margin-top: 70px;
+}
+.fightScreen .move:nth-child(3), .actionScreen .move:nth-child(4) {
+  margin-top: 15px;
+}
+.fightScreen .cancel {
+  color: #d9eef7;
+  border: solid 1px #0076a3;
+  background: #0095cd;
+  background: -moz-linear-gradient(top, #00adee, #0078a5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+  padding: 10px 30px;
+  margin: auto;
+  margin-top: 30px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 81px);
+}
+.fightScreen .cancel:hover {
+  opacity: 0.9;
+}
+.fightScreen .item {
+  width: calc(95% - 20px);
+  margin: 10px 2.5%;
+  background-color: rgba(255,255,255,0.7);
+  border: 2px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fightScreen .item:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+.fightScreen .item img {
+  width: 20px;
+  display: inline-block;
+}
+.fightScreen .item p {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.fightScreen .contactZone {
+  width: calc(95% - 20px);
+  margin: 10px 2.5%;
+  background-color: rgba(255,255,255,0.7);
+  border: 2px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+}
+.fightScreen .contactZone a {
+  color: #0095cd;
+  text-decoration: none;
+}
+.cv {
+  font-family: pixel-font;
+  background-color: #ddd;
+  height: 460px;
+}
+.cv h2 {
+  font-size: 12px;
+  margin: 2px 0;
+}
+.cv h3 {
+  font-size: 11px;
+  margin: 0;
+}
+.cv h4 {
+  font-size: 9px;
+  margin: 0;
+}
+.cv p {
+  font-size: 9px;
+  margin: 0;
+}
+.cv p span {
+  display: inline-block;
+  width: 80px;
+}
+.cv .left {
+  width: calc(22% - 10px);
+  padding: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.cv .left .containerInfos {
+  padding: 5px 10px;
+}
+.cv .right {
+  width: calc(78% - 10px);
+  padding: 5px;
+  vertical-align: top;
+  display: inline-block;
+}
+.cv .right h2 {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #ccc;
+}
+.cv .right h2.active {
+  background-color: #fff;
+}
+.cv .right .rightContainer {
+  background-color: #fff;
+  padding: 14px 0px;
+  height: 386px;
+  width: 100%;
+  display: none;
+}
+.cv .right .rightContainer.active {
+  display: block;
+}
+.cv .right .profilText {
+  padding: 20px;
+}
+.cv .right .experiences {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+}
+.cv .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.cv .close:hover {
+  color: red;
+}
+.contact {
+  background-color: #eee;
+  height: 460px;
+  padding: 0 200px;
+  font-family: pixel-font;
+  position: relative;
+}
+.contact .inputContainer {
+  width: 50%;
+  display: inline-block;
+}
+.contact label {
+  font-size: 12px;;
+}
+.contact .inputContainer input {
+  width: 90%;
+  border:none;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  box-shadow:0 0 5px #666 inset;
+  height:25px;
+  line-height:25px;
+  text-indent:5px;
+  font-family: pixel-font;
+  font-size: 10px;
+}
+.contact .inputContainer input:focus { 
+  outline:none; 
+}
+.contact .textareaContainer {
+  width: 100%;
+}
+.contact .textareaContainer textarea {
+  font-family: pixel-font;
+  font-size: 10px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: 250px;
+  border-radius: 10px;
+  box-shadow:0 0 5px #666 inset;
+}
+.contact .textareaContainer textarea:focus {
+  outline:none; 
+}
+.contact button {
+  position: absolute;
+  right: 200px;
+  padding: 10px 30px;
+  font-family: pixel-font;
+  font-family: 10px;
+  background-color: rgba(255,0,0,0.7);
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.contact button:hover {
+  background-color: rgba(255,0,0,0.8);
+}
+.contact button svg {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.contact .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.contact .close:hover {
+  color: red;
+}
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 3;
+  display: none;
+}
+.modal.active {
+  display: block;
+}
+.modal p {
+  width: 300px;
+  background-color: #eee;
+  text-align: center;
+  margin: auto;
+  padding: 30px 0;
+  /* height: 100px; */
+  margin-top: 180px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.buttonRight:hover, .buttonTop:hover, .buttonLeft:hover, .buttonBottom:hover, .buttonA:hover, .buttonB:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.buttonTop {
+  position: fixed;
+  left: 20px;
+  z-index: 20;
+  bottom: 20px;
+  font-size: 2em;
+}
+.buttonTop {
+  position: fixed;
+  left: 80px;
+  z-index: 20;
+  bottom: 80px;
+  font-size: 2em;
+  opacity: 0.6;
+}
+.buttonLeft {
+  position: fixed;
+  left: 20px;
+  z-index: 20;
+  bottom: 20px;
+  font-size: 2em;
+  opacity: 0.6;
+}
+.buttonBottom {
+  position: fixed;
+  left: 80px;
+  z-index: 20;
+  bottom: 20px;
+  font-size: 2em;
+  opacity: 0.6;
+}
+.buttonRight {
+  position: fixed;
+  left: 140px;
+  z-index: 20;
+  bottom: 20px;
+  font-size: 2em;
+  opacity: 0.6;
+}
+.buttonA {
+  position: fixed;
+  right: 20px;
+  z-index: 20;
+  bottom: 20px;
+  font-size: 2em;
+  opacity: 0.6;
+}
+.buttonB {
+  position: fixed;
+  right: 80px;
+  z-index: 20;
+  bottom: 20px;
+  font-size: 2em;
+  opacity: 0.6;
+}
+.start {
+  color: #fff;
+}
+.start h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.start .buttonTest {
+  background-color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+.start .buttonTest:focus {
+  outline: none;
+}
+.start .startButton {
+  background-color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  color: #fff;
+  cursor: pointer;
+  right: 0;
+  display: block;
+  margin: auto;
+  position: absolute;
+}
+.start .startButton:focus {
+  outline: none;
+}
+.start ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;;
+}
+.start li {
+  text-align: left;
+  list-style: none;
+  margin: 10px 0;
+}
+.start .key {
+  padding: 5px;
+  background-color: #000;
+  margin: 1px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.elements ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  right: 0;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+}
+.elements li {
+  text-align: left;
+  list-style: none;
+  margin: auto;
+  margin-top: 5px;
+}
+.elements li svg {
+  padding: 3px;
+  margin-right: 3px;;
+  background-color: #ccc;
+}
+.elements li .key {
+  padding: 0px 6px;
+  margin-right: 3px;;
+  background-color: #ccc;
+}

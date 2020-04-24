@@ -1,0 +1,56 @@
+{
+    "1": {
+        "name": "path",
+        "position": {
+            "x": -20,
+            "y": 0
+        },
+        "normal": "-60px -360px",
+        "middleTop": "-20px -320px",
+        "topRight": "-40px -320px",
+        "middleRight": "-40px -340px",
+        "rightBottom": "-40px -360px",
+        "middleBottom": "-20px -360px",
+        "bottomLeft": "-0px -360px",
+        "middleLeft": "-0px -340px",
+        "leftTop": "-0px -320px",
+        "invTopRight": "-80px -320px",
+        "invRightBottom": "-80px -340px",
+        "invBottomLeft": "-60px -340px",
+        "invLeftTop": "-60px -320px"
+    },
+    "2": {
+        "name": "grass",
+        "position": {
+            "x": -20,
+            "y": 0
+        }
+    },
+    "3": {
+        "name": "water",
+        "position": {
+            "x": -20,
+            "y": 0
+        },
+        "normal": "-120px -580px",
+        "middleTop": "-120px -560px",
+        "topRight": "-140px -560px",
+        "middleRight": "-140px -580px",
+        "rightBottom": "-140px -600px",
+        "middleBottom": "-120px -600px",
+        "bottomLeft": "-100px -600px",
+        "middleLeft": "-100px -580px",
+        "leftTop": "-100px -560px",
+        "invTopRight": "-180px -560px",
+        "invRightBottom": "-180px -580px",
+        "invBottomLeft": "-160px -580px",
+        "invLeftTop": "-160px -560px"
+    },
+    "4": {
+        "name": "tall grass",
+        "position": {
+            "x": -200,
+            "y": -60
+        }
+    }
+}
